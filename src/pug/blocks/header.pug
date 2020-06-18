@@ -1,0 +1,21 @@
+header(class="header")
+    div(class="container")
+        div(class="header__left")
+            nav(class="nav")
+                - var navValues = {"О компании": "about", "Новости": "news", "Статьи": "papers", "Полезное": "help", "Дилерам": "dealer", "Галерея": "gallery", "Доставка": "delivery", "Контакты": "contacts"} 
+                ul(class="nav__wrap")
+                    each val, key in navValues
+                        li(class="nav__item")
+                            a(href="../src/pug/pages/"+val+".pug")= key  
+        div(class="header__right")
+            ul(class="header__soc")
+                - var socSources = ["vk", "fb", "inst", "twitter", "odnoklasniki"]
+                each src in socSources
+                    li(class="header__soc-item")
+                        a(href="!#") 
+                            img(class="header__soc-icon svg", src="img/icons/"+src+".svg")
+            div(class="header__city")
+                div(class="header__city-top")
+                    img(class="header__arrow svg", src="../src/img/icons/arrow.svg")
+                    span Выбрать город
+                div(class="header__city-bottom") Санкт-Петербург

@@ -4,4 +4,76 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1089px;
+  display: block;
+  margin: auto;
+}
+
+.header {
+  background-color: #476200;
+  color: white;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stetch;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+}
+.header__soc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__soc:after {
+  content: "";
+  display: block;
+  height: 34px;
+  width: 1px;
+  background-color: #fff;
+  margin-left: 25px;
+}
+.header__soc-item {
+  padding: 0;
+  margin: 0;
+  margin-right: 14px;
+  list-style: none;
+}
+.header__soc-item a {
+  display: flex;
+}
+.header__soc-item:last-child {
+  margin-right: 0;
+}
+
+.nav__wrap {
+  display: flex;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding: 11px 0 15px 0;
+}
+.nav__item {
+  padding: 0;
+  margin: 0;
+  margin-right: 20px;
+}
+.nav__item a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 19px;
+}
+.nav__item:last-child {
+  margin-right: 0;
+}
+
 /*# sourceMappingURL=/main.1f19ae8e.css.map */

@@ -1,2 +1,3 @@
-import './main.scss';
-console.log('Hello main.js!')
+import pasteSVG from '../src/js/libs/pasteSvg';
+
+pasteSVG();
