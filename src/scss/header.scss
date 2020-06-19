@@ -72,4 +72,61 @@
         font-size: 14px;
         line-height: 19px;
     }
+
+    &__lang {
+        height: 100%;
+        margin-left: 17px;
+        position: relative;
+    }
+    
+    &__lang-wrap {
+        padding: 0px 15px;
+        background-color: #fff;
+        cursor: pointer;
+        display: none;
+        align-items: center;
+        min-width: 130px;
+        height: 100%;
+        z-index: 2;
+        position: relative;
+
+        &.active {
+            display: flex;
+        }
+    }
+
+    &__lang-select {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #fff;
+        position: absolute;
+        top: 100%;
+        transform: translateY(-100%);
+        width: 100%;
+        left: 0;
+        transition: ease-out .25s;
+    }
+
+    &__lang-item {
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    &__lang-text {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        color: $base-green;
+        margin-left: 10px;
+    }
+
+    &__lang-arrow {
+        margin-left: 10px;
+
+        path {
+            fill: $base-green;
+        }
+    }
 }
