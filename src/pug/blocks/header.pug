@@ -1,37 +1,65 @@
 header(class="header")
-    div(class="container")
-        div(class="header__left")
+    div(class="header__nav")
+        div(class="container")
             nav(class="nav")
                 - var navValues = {"О компании": "about", "Новости": "news", "Статьи": "papers", "Полезное": "help", "Дилерам": "dealer", "Галерея": "gallery", "Доставка": "delivery"} 
                 ul(class="nav__wrap")
                     each val, key in navValues
                         li(class="nav__item")
                             a(href="../src/pug/pages/"+val+".pug")= key  
-        div(class="header__right")
-            ul(class="header__soc")
-                - var socSources = ["vk", "fb", "inst", "twitter", "odnoklasniki"]
-                each src in socSources
-                    li(class="header__soc-item")
-                        a(href="!#") 
-                            img(class="header__soc-icon svg", src="img/icons/"+src+".svg")
-            div(class="header__city")
-                div(class="header__city-top")
-                    img(class="header__arrow svg", src="../src/img/icons/arrow.svg")
-                    span Выбрать город
-                div(class="header__city-bottom") Санкт-Петербург
-            div(class="header__lang")
-                div(class="header__lang-wrap active", data-lang="eng")
-                    img(class="header__lang-flag svg", src="../src/img/icons/uk.svg")
-                    span(class="header__lang-text") English
-                    img(class="header__lang-arrow svg", src="../src/img/icons/arrow.svg")
-                div(class="header__lang-wrap", data-lang="rus")
-                    img(class="header__lang-flag svg", src="../src/img/icons/rus.svg")
-                    span(class="header__lang-text") Русский
-                    img(class="header__lang-arrow svg", src="../src/img/icons/arrow.svg")
-                div(class="header__lang-select")
-                    div(class="header__lang-item")
+            div(class="header__right")
+                ul(class="header__soc")
+                    - var socSources = ["vk", "fb", "inst", "twitter", "odnoklasniki"]
+                    each src in socSources
+                        li(class="header__soc-item")
+                            a(href="!#") 
+                                img(class="header__soc-icon svg", src="img/icons/"+src+".svg")
+                div(class="header__city")
+                    div(class="header__city-top")
+                        img(class="header__city-arrow svg", src="../src/img/icons/arrow.svg")
+                        span Выбрать город
+                    div(class="header__city-bottom") Санкт-Петербург
+                div(class="header__lang")
+                    div(class="header__lang-wrap active", data-lang="eng")
                         img(class="header__lang-flag svg", src="../src/img/icons/uk.svg")
                         span(class="header__lang-text") English
-                    div(class="header__lang-item")
-                        img(class="header__lang-flag svg", src="../src/img/icons/uk.svg")
+                        img(class="header__lang-arrow svg", src="../src/img/icons/arrow.svg")
+                    div(class="header__lang-wrap", data-lang="rus")
+                        img(class="header__lang-flag svg", src="../src/img/icons/rus.svg")
                         span(class="header__lang-text") Русский
+                        img(class="header__lang-arrow svg", src="../src/img/icons/arrow.svg")
+                    div(class="header__lang-select")
+                        div(class="header__lang-item")
+                            img(class="header__lang-flag svg", src="../src/img/icons/uk.svg")
+                            span(class="header__lang-text") English
+                        div(class="header__lang-item")
+                            img(class="header__lang-flag svg", src="../src/img/icons/rus.svg")
+                            span(class="header__lang-text") Русский
+    div(class="header__info")
+        div(class="container")
+            a(class="header__logo", href="/") 
+                img(src="../src/img/icons/logo.png", alt="alt") 
+            div(class="header__info-list")
+                div(class="contacts")
+                    img(src="img/icons/geo.svg", class="contacts__icon")
+                    div(class="contacts__text-wrap")
+                        div(class="contacts__text") Наше производство
+                        a(class="contacts__link", target="_blank", href="https://goo.gl/maps/zVejpXeguvLYHvd8A") ул. Лифляндская д 3
+                div(class="contacts")
+                    img(src="img/icons/email.svg", class="contacts__icon")
+                    div(class="contacts__text-wrap")
+                        div(class="contacts__text") Написать нам 
+                        a(class="contacts__link", href="mailto:info@sipp-trade.ru") info@sipp-trade.ru
+                div(class="contacts")
+                    img(src="img/icons/phone.svg", class="contacts__icon")
+                    div(class="contacts__text-wrap")
+                        div(class="contacts__text") Позвонить нам
+                        a(class="contacts__link", href="tel:8(812)5092071") +7(812) 509-20-71
+    nav(class="header__menu")
+        div(class="container container_big")
+            ul(class="menu")
+                - var menu = {"Главная": "/", "Грунтовки": "!#", "Клей": "!#", "Наливной пол": "!#", "Гидроизоляция": "!#", "Прайс": "!#"}
+                each val, key in menu
+                    li(class="menu__item")
+                        a(href=val)= key  
+

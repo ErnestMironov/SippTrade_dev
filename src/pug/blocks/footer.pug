@@ -1,2 +1,21 @@
+footer(class="footer")
+    div(class="footer__media")
+        div(class="container")
+            form(class="subscribe")
+                img(class="subscribe__icon", src="../src/img/icons/send-mail.svg")
+                span(class="subscribe__txt") Подпишитесь <br> на наши новости:
+                input(class="subscribe__input", placeholder="Введите ваш e-mail")
+                button(class="subscribe__submit") Подписаться
+            ul(class="footer__soc")
+                - var footerSoc = ["vk_with-back", "fb_with-back", "inst_with-back", "tw_with-back", "ok_with-back"]
+                each src in footerSoc
+                    li(class="footer__soc-item")
+                        a(href="!#") 
+                            img(src="../src/img/icons/"+src+".svg", class="svg")
+    div(class="footer__main")
+        div(class="container")
+            div(class="footer__info footer__main-item")
+                img(class="footer__logo", src="../src/img/icons/logo.svg")
+                p(class="footer__info-text") Существенным фактором, влияющим на долговечность лакокрасочного покрытия, защитного, или декоративного, является его сцепление с основанием - адгезия.
 script(src="https://code.jquery.com/jquery-3.3.1.min.js")
 script(src='./main.js')

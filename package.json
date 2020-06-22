@@ -9,7 +9,9 @@
     "build-prod": "parcel build src/index.pug"
   },
   "dependencies": {
-    "js": "^0.1.0"
+    "autoprefixer": "^9.8.2",
+    "js": "^0.1.0",
+    "postcss-modules": "^2.0.0"
   },
   "devDependencies": {
     "parcel-bundler": "latest",

@@ -1,0 +1,31 @@
+.footer {
+    background-color: $soft-black;
+    
+    &__media {
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #2C2C2C;
+            padding: 21px 0;
+        }
+    }
+
+    &__soc {
+        display: flex;
+    }
+
+    &__soc-item {
+        list-style: none;
+        margin-right: 3px;
+        path {
+            transition: ease-in-out .2s;
+        }
+
+        &:hover {
+            svg>path {
+                fill: $base-green;
+            }
+        }
+    }
+}
