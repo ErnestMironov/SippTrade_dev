@@ -1,13 +1,20 @@
 .contacts {
         display: flex;
         align-items: center;
-    
+
+        &_white {
+            .contacts {
+                &__text, &__link{
+                    color: #fff;
+                }
+            }
+        }
 
     &__icon {
         margin-right: 20px;
     }
 
-    &__txt {
+    &__text {
         color: #777777;
         font-weight: 300;
         font-size: 14px;
