@@ -57,5 +57,12 @@ footer(class="footer")
                     div(class="contacts__text-wrap")
                         div(class="contacts__text") Позвонить нам
                         a(class="contacts__link", href="tel:8(812)5092071") +7(812) 509-20-71
+    div(class="footer__bottom")
+        div(class="container")
+            span(class="footer__copy") Copyrights SIPP-TRADE &copy; 2017 All Rights Reserved. 
+            ul(class="footer__bottom-list")
+                each val in ["Политика конфеденциальности", "Правила сайта", "Карта сайта", "Документы"]
+                    li(class="footer__bottom-list-item")
+                        a(href="!#")= val
 script(src="https://code.jquery.com/jquery-3.3.1.min.js")
 script(src='./main.js')
