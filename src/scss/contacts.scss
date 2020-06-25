@@ -1,14 +1,18 @@
 .contacts {
-        display: flex;
-        align-items: center;
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
 
-        &_white {
-            .contacts {
-                &__text, &__link{
-                    color: #fff;
-                }
+    &_white {
+        .contacts {
+
+            &__text,
+            &__link {
+                color: #fff;
             }
         }
+    }
 
     &__icon {
         margin-right: 20px;
@@ -17,14 +21,10 @@
     &__text {
         color: #777777;
         font-weight: 300;
-        font-size: 14px;
-        line-height: 19px;
     }
 
     &__link {
         font-weight: bold;
-        font-size: 14px;
-        line-height: 19px;
         color: $base-green;
         text-decoration: none;
     }

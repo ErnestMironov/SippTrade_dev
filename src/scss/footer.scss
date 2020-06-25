@@ -71,8 +71,8 @@
 
     &__info-text {
         font-weight: normal;
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 0.9375rem;
+        line-height: 1.25rem;
         color: #FFFFFF;
         max-width: 327px;
         margin-top: 14px;
@@ -84,8 +84,8 @@
 
     &__title {
         font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
+        font-size: 1.125rem;
+        line-height: 1.5625rem;
         color: #FFFFFF;
         margin: 16px 0 26px;
         position: relative;
@@ -118,8 +118,8 @@
 
         a {
             font-weight: normal;
-            font-size: 15px;
-            line-height: 22px;
+            font-size: 0.9375rem;
+            line-height: 1.375rem;
             color: #FFFFFF;
             text-decoration: none;
 
@@ -167,8 +167,8 @@
 
     &__news-date {
         font-weight: normal;
-        font-size: 15px;
-        line-height: 22px;
+        font-size: 0.9375rem;
+        line-height: 1.375rem;
         color: $base-green;
     }
 

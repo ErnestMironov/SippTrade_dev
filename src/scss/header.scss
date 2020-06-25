@@ -54,6 +54,8 @@
         height: 100%;
         margin-left: 25px;
         cursor: pointer;
+        line-height: 1.1875rem;
+        font-size: 0.875rem;
     }
 
     &__city-top {
@@ -63,10 +65,8 @@
 
         span {
             color: #E8E8E8;
-            font-size: 14px;
             font-weight: 400;
             margin-left: 3px;
-            line-height: 19px;
         }
     }
 
@@ -76,8 +76,6 @@
 
     &__city-bottom {
         font-weight: bold;
-        font-size: 14px;
-        line-height: 19px;
     }
 
     &__lang {
@@ -123,8 +121,8 @@
 
     &__lang-text {
         font-weight: bold;
-        font-size: 14px;
-        line-height: 19px;
+        font-size: 0.875rem;
+        line-height: 1.1875rem;
         color: $base-green;
         margin-left: 10px;
     }
