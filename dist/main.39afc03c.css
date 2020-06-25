@@ -56,6 +56,17 @@ body {
 .button:hover:after, .button:hover:before {
   transform: translateX(0);
 }
+.button_green {
+  border: 2px solid #476200;
+  background-color: #476200;
+  transition: all ease-out 0.2s;
+}
+.button_green::after, .button_green::before {
+  display: none;
+}
+.button_green:hover {
+  background-color: #222f00;
+}
 
 .header__nav {
   color: white;
@@ -506,6 +517,86 @@ body {
 }
 .subscribe__submit:hover {
   background-color: #354900;
+}
+
+.welcome {
+  position: relative;
+}
+.welcome:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+}
+.welcome__wrap {
+  position: relative;
+  z-index: 1;
+  padding-top: 52px;
+}
+.welcome__title {
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+}
+.welcome__title-big {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 61px;
+  position: relative;
+}
+.welcome__title-big:after {
+  content: "*";
+  position: absolute;
+  right: -0.7em;
+  top: -0.4em;
+}
+.welcome__separator {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 26px;
+}
+.welcome__separator div {
+  flex: auto;
+  background-color: #476200;
+  height: 30px;
+}
+.welcome__separator::after, .welcome__separator::before {
+  content: "";
+  border-top: 30px solid #476200;
+}
+.welcome__separator::after {
+  border-right: 30px solid transparent;
+}
+.welcome__separator::before {
+  border-left: 30px solid transparent;
+}
+.welcome__subtitle {
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 28px;
+  text-align: center;
+}
+.welcome__actions {
+  margin-top: 32px;
+  text-align: center;
+}
+.welcome__btn {
+  font-size: 30px;
+  line-height: 41px;
+  padding: 9px 22px;
+}
+.welcome__catalog {
+  margin-right: 16px;
 }
 
 /*# sourceMappingURL=/main.39afc03c.css.map */

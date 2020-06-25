@@ -3,5 +3,18 @@ html(lang="en")
     include pug/blocks/head.pug
     body
         include pug/blocks/header.pug 
-        h1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, nulla voluptate enim culpa harum nobis, sed necessitatibus quam nisi molestias deleniti. Iure, incidunt corporis rerum asperiores quae in, illum nemo libero quasi possimus ipsam harum culpa consequatur doloribus natus alias ea, fugit veritatis. Commodi error ex qui cum a autem laudantium assumenda, veritatis vel distinctio voluptas quis labore? Quia mollitia modi aspernatur in eaque culpa ab aliquid dicta amet sequi numquam quo labore reiciendis voluptatum, similique dolore eveniet ipsum accusantium repellat sint cum unde molestias. Impedit nulla aut modi repellendus eum molestias illo voluptatum. Cupiditate quae labore pariatur sit quis! Consequatur modi rem libero perferendis quis, iste eligendi quam ad, ipsum, placeat dolor saepe dolore totam officia at non et omnis! Corporis unde magni ad reiciendis, amet perspiciatis quo minima aspernatur officia delectus laudantium sed aut, enim soluta, autem sit consequuntur expedita distinctio inventore aliquam eveniet. Nemo, totam perspiciatis obcaecati maxime dolores harum asperiores dignissimos quidem excepturi esse ipsum cum rerum, possimus neque atque? Accusamus cumque illo atque quos sapiente qui quasi officia. Quibusdam exercitationem ab id iusto magni error. Consectetur voluptatem impedit voluptatum iste omnis repellendus quod veritatis, fugit obcaecati accusamus minus saepe perferendis vitae quis provident magnam doloribus.
+        div(class="welcome", style="background-image:  url(../src/img/fitting-wood-flooring.jpg); background-size: cover;background-position: center;")
+            div(class="container container_big welcome__wrap")
+                div(class="welcome__title")
+                        span(class="welcome__title-big") ПРОДУКЦИЯ У КОТОРОЙ ЕСТЬ ДУША 
+                        <br>
+                        span полиуретановая и эпоксидная 
+                div(class="welcome__separator")
+                    div
+                h1(class="welcome__subtitle") СОБСТВЕННОЕ ПРОИЗВОДСТВО УМНОГО КЛЕЯ
+                div(class="welcome__actions")
+                    button(class="button welcome__btn welcome__catalog") 
+                        span Посмотреть каталог
+                    button(class="button welcome__btn button_green welcome__partner") 
+                        span Стать партнером
         include pug/blocks/footer.pug
