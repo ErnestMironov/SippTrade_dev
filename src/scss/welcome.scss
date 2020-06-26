@@ -143,44 +143,52 @@
 
 @keyframes arrow {
     0% {
-        opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(0);
     }
 
-    5% {
+    7% {
+        transform: translateY(-20px);
         opacity: 1;
     }
 
     10% {
-        transform: translateY(20px);
         opacity: 0;
+        transform: translateY(20px);
     }
 
-    20%,
+    15%,
     100% {
-        opacity: 1;
         transform: translateY(0);
+    }
+    
+    20% {
+        opacity: 0;
+    }
+    
+    25% {
+        opacity: 1;
     }
 }
 
 @keyframes arrow2 {
 
     0%,
-    10% {
+    9% {
         transform: translateY(0);
         opacity: 1;
     }
 
-    20% {
+    15% {
         transform: translateY(20px);
         opacity: 0;
     }
 
-    21% {
+    16% {
         transform: translateY(0);
     }
 
-    30%, 100% {
+    30%,
+    100% {
         opacity: 1;
     }
 }

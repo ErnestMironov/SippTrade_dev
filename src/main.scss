@@ -32,6 +32,7 @@ body {
     }
 }
 
+@import 'scss/textClasses.scss';
 @import 'scss/button.scss';
 @import 'scss/header.scss';
 @import 'scss/nav.scss';
@@ -41,3 +42,5 @@ body {
 @import 'scss/subscribe.scss';
 @import 'scss/welcome.scss';
 @import 'scss/advantages.scss';
+@import 'scss/about.scss';
+@import 'scss/catalog.scss';

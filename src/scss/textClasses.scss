@@ -1,0 +1,41 @@
+.subtitle {
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding-bottom: 19px;
+    display: inline-block;
+    position: relative;
+    color: #000000;
+
+    &:after {
+        content: '';
+        display: block;
+        background-color: $base-green;
+        height: 3px;
+        width: calc(100% + 30px);
+        position: absolute;
+        left: 0;
+        bottom: -1.5px;
+    }
+}
+
+.txt-block {
+    &__txt {
+        border-top: 1px solid #F9F9F9;
+        padding-top: 44px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.04px
+    }
+
+    &__ghost {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #7D8387;
+        margin-left: 48px;
+        text-decoration: none;
+    }
+}
