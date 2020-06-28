@@ -1,0 +1,49 @@
+.home-pg {
+    &__price {
+        margin-top: 21px;
+    }
+
+    &__why {
+        margin-top: 107px;
+    }
+}
+
+.why {
+
+    .container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__img {
+        width: 339px;
+        height: 339px;
+        object-fit: contain;
+        object-position: center;
+        margin-right: 35px;
+    }
+
+    &__txt-wrap {
+        flex: auto;
+    }
+
+    &__title {}
+
+    &__txt {
+        margin-top: 40px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.048px;
+        color: #424242;
+    }
+
+    &__btn {
+        margin-top: 21px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.136px;
+        padding: 12px 21px;
+    }
+}

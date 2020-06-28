@@ -808,6 +808,7 @@ body {
 
 .about {
   margin-top: 102px;
+  margin-bottom: 102px;
 }
 .about__grid {
   margin-top: 55px;
@@ -898,9 +899,6 @@ body {
   transform-origin: center;
 }
 
-.catalog {
-  margin-top: 102px;
-}
 .catalog__grid {
   display: -ms-grid;
   display: grid;
@@ -972,6 +970,74 @@ body {
 }
 .catalog__item-desc {
   margin-top: 8px;
+}
+
+.introduction {
+  padding: 51px 0px 47px;
+  position: relative;
+}
+.introduction .container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.introduction:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+}
+.introduction__price {
+  font-size: 1.875rem;
+  line-height: 2.5625rem;
+  padding: 9px 25px;
+}
+
+.news .subtitle:after {
+  width: calc(100% + 7px);
+}
+
+.home-pg__price {
+  margin-top: 21px;
+}
+.home-pg__why {
+  margin-top: 107px;
+}
+
+.why .container {
+  display: flex;
+  align-items: flex-start;
+}
+.why__img {
+  width: 339px;
+  height: 339px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  margin-right: 35px;
+}
+.why__txt-wrap {
+  flex: auto;
+}
+.why__txt {
+  margin-top: 40px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.048px;
+  color: #424242;
+}
+.why__btn {
+  margin-top: 21px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.136px;
+  padding: 12px 21px;
 }
 
 /*# sourceMappingURL=/main.39afc03c.css.map */

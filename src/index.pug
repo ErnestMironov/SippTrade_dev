@@ -71,4 +71,20 @@ html(lang="en")
                         img(class="about__grid-bg",src="../src/img/about_5.jpg", alt="")
                         span(class="about__grid-title") контакты
         include pug/blocks/catalog.pug
-        include pug/blocks/footer.pug
+        div(class="introduction home-pg__price", style="background-image:  url(../src/img/shpatel.jpg); background-size: cover;background-position: center;")
+            div(class="container")
+                button(class="button introduction__price") 
+                    span Получить оптовый прайс
+        div(class="why home-pg__why")
+            div(class="container")
+                <picture>
+                    <source srcset="../src/img/products/big-picture.webp" type="image/webp">
+                    <source srcset="../src/img/products/big-picture.png" type="image/png"> 
+                    <img class="why__img", src="../src/img/products/big-picture.png" alt="Alt Text!">
+                </picture>
+                div(class="why__txt-wrap")
+                    h2(class="subtitle why__title") ПОЧЕМУ МЫ
+                    p(class="why__txt") В профессиональной сфере часто случается так, что личные или корпоративные клиенты заказывают, чтобы публикация была сделана и представлена еще тогда, когда фактическое содержание все еще не готово. Вспомните новостные блоги, где информация публикуется каждый час в живом порядке. Тем не менее, читатели склонны к тому, чтобы быть отвлеченными доступным контентом, скажем, любым текстом, который был скопирован из газеты или интернета.
+                    button(class="button button_green why__btn") Подробнее
+        include pug/blocks/news.pug 
+        include pug/blocks/footer.pug 
